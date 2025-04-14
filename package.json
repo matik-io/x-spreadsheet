@@ -1,7 +1,7 @@
 {
   "name": "x-data-spreadsheet",
-  "version": "1.1.8",
-  "description": "a javascript xpreadsheet",
+  "version": "1.1.9",
+  "description": "fork of x-data-spreadsheet",
   "types": "src/index.d.ts",
   "main": "src/index.js",
   "files": [
@@ -10,11 +10,11 @@
     "src",
     "build/dist"
   ],
-  "author": "myliang <liangyuliang0335@gmail.com>",
+  "author": "matik",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/myliang/x-spreadsheet.git"
+    "url": "https://github.com/matik-io/x-spreadsheet"
   },
   "nyc": {
     "all": true,
@@ -32,8 +32,7 @@
     "build-locale": "webpack --config build/webpack.locale.js",
     "lint": "./node_modules/eslint/bin/eslint.js src",
     "test": "nyc ./node_modules/mocha/bin/mocha --require @babel/register --recursive test",
-    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t 31ecdb12-8ecb-46f7-a486-65c2516307dd",
-    "postinstall": "opencollective-postinstall"
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov -t 31ecdb12-8ecb-46f7-a486-65c2516307dd"
   },
   "keywords": [
     "javascript",
